@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d602a695b89d26b6187434e08e98cffa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d602a695b89d26b6187434e08e98cffa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d602a695b89d26b6187434e08e98cffa = L.map(
+                "map_d602a695b89d26b6187434e08e98cffa",
+                {
+                    center: [40.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7cda9c35c079f670519d220cdaaa53cb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7cda9c35c079f670519d220cdaaa53cb.addTo(map_d602a695b89d26b6187434e08e98cffa);
+        
+    
+            var marker_45bacb8ee1d5b7fd9b7189db6b78aca7 = L.marker(
+                [51.0, 9.0],
+                {
+}
+            ).addTo(map_d602a695b89d26b6187434e08e98cffa);
+        
+    
+        var popup_08e542d2e80ca774940299273b4e63e7 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_eeedcd921c355bab977af0dde182e624 = $(`<div id="html_eeedcd921c355bab977af0dde182e624" style="width: 100.0%; height: 100.0%;">     <b>País:</b> Alemanha<br>     <b>Imposto:</b> 15.8<br>     <b>LPI:</b> 4.1<br>     <b>Facilidade Negócios:</b> 22.0<br>     <b>PIB:</b> 4526.0<br>     <b>CPI:</b> 78     </div>`)[0];
+                popup_08e542d2e80ca774940299273b4e63e7.setContent(html_eeedcd921c355bab977af0dde182e624);
+            
+        
+
+        marker_45bacb8ee1d5b7fd9b7189db6b78aca7.bindPopup(popup_08e542d2e80ca774940299273b4e63e7)
+        ;
+
+        
+    
+    
+            marker_45bacb8ee1d5b7fd9b7189db6b78aca7.bindTooltip(
+                `<div>
+                     Alemanha
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a1b483c29845fa84fc29ca861d57763b = L.marker(
+                [48.85, 2.35],
+                {
+}
+            ).addTo(map_d602a695b89d26b6187434e08e98cffa);
+        
+    
+        var popup_41bbf024b6eb42be6603a27e64c6a1d2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0cd5eb13d78ff8dd02e9811be490ef1e = $(`<div id="html_0cd5eb13d78ff8dd02e9811be490ef1e" style="width: 100.0%; height: 100.0%;">     <b>País:</b> França<br>     <b>Imposto:</b> 25.0<br>     <b>LPI:</b> 4.0<br>     <b>Facilidade Negócios:</b> 32.0<br>     <b>PIB:</b> 3052.0<br>     <b>CPI:</b> 71     </div>`)[0];
+                popup_41bbf024b6eb42be6603a27e64c6a1d2.setContent(html_0cd5eb13d78ff8dd02e9811be490ef1e);
+            
+        
+
+        marker_a1b483c29845fa84fc29ca861d57763b.bindPopup(popup_41bbf024b6eb42be6603a27e64c6a1d2)
+        ;
+
+        
+    
+    
+            marker_a1b483c29845fa84fc29ca861d57763b.bindTooltip(
+                `<div>
+                     França
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2fe751f978ba2ce40897ea4d09ebb0f2 = L.marker(
+                [54.0, -2.0],
+                {
+}
+            ).addTo(map_d602a695b89d26b6187434e08e98cffa);
+        
+    
+        var popup_659661782679b15ef1601038f20a2979 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c5e314f2b3f2a3cfc11699a3cc442202 = $(`<div id="html_c5e314f2b3f2a3cfc11699a3cc442202" style="width: 100.0%; height: 100.0%;">     <b>País:</b> Reino Unido<br>     <b>Imposto:</b> 25.0<br>     <b>LPI:</b> 3.8<br>     <b>Facilidade Negócios:</b> 8.0<br>     <b>PIB:</b> 3381.0<br>     <b>CPI:</b> 71     </div>`)[0];
+                popup_659661782679b15ef1601038f20a2979.setContent(html_c5e314f2b3f2a3cfc11699a3cc442202);
+            
+        
+
+        marker_2fe751f978ba2ce40897ea4d09ebb0f2.bindPopup(popup_659661782679b15ef1601038f20a2979)
+        ;
+
+        
+    
+    
+            marker_2fe751f978ba2ce40897ea4d09ebb0f2.bindTooltip(
+                `<div>
+                     Reino Unido
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ae8c400e289c7056249d4b5ffe70f5bb = L.marker(
+                [52.5, 5.75],
+                {
+}
+            ).addTo(map_d602a695b89d26b6187434e08e98cffa);
+        
+    
+        var popup_a55083d59ec3b530d4eebabc5135037a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3cd6483d5027408226ee05629e253314 = $(`<div id="html_3cd6483d5027408226ee05629e253314" style="width: 100.0%; height: 100.0%;">     <b>País:</b> Países Baixos<br>     <b>Imposto:</b> 25.8<br>     <b>LPI:</b> 4.1<br>     <b>Facilidade Negócios:</b> 24.0<br>     <b>PIB:</b> 1118.0<br>     <b>CPI:</b> 79     </div>`)[0];
+                popup_a55083d59ec3b530d4eebabc5135037a.setContent(html_3cd6483d5027408226ee05629e253314);
+            
+        
+
+        marker_ae8c400e289c7056249d4b5ffe70f5bb.bindPopup(popup_a55083d59ec3b530d4eebabc5135037a)
+        ;
+
+        
+    
+    
+            marker_ae8c400e289c7056249d4b5ffe70f5bb.bindTooltip(
+                `<div>
+                     Países Baixos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9369caacb663dc768cb48b3f97d6dfb7 = L.marker(
+                [50.85, 4.35],
+                {
+}
+            ).addTo(map_d602a695b89d26b6187434e08e98cffa);
+        
+    
+        var popup_9954c2695725b199ba43d64e6d04ee0f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_89a8689fb0f893b5c4de70d45cec9cc7 = $(`<div id="html_89a8689fb0f893b5c4de70d45cec9cc7" style="width: 100.0%; height: 100.0%;">     <b>País:</b> Bélgica<br>     <b>Imposto:</b> 25.0<br>     <b>LPI:</b> 4.0<br>     <b>Facilidade Negócios:</b> 46.0<br>     <b>PIB:</b> 632.0<br>     <b>CPI:</b> 69     </div>`)[0];
+                popup_9954c2695725b199ba43d64e6d04ee0f.setContent(html_89a8689fb0f893b5c4de70d45cec9cc7);
+            
+        
+
+        marker_9369caacb663dc768cb48b3f97d6dfb7.bindPopup(popup_9954c2695725b199ba43d64e6d04ee0f)
+        ;
+
+        
+    
+    
+            marker_9369caacb663dc768cb48b3f97d6dfb7.bindTooltip(
+                `<div>
+                     Bélgica
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4ed29b10c9e02596090abe08a22ec0c5 = L.marker(
+                [60.0, 18.0],
+                {
+}
+            ).addTo(map_d602a695b89d26b6187434e08e98cffa);
+        
+    
+        var popup_d166e0aa109ffa551207ebcd4740aa89 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e2e624ba2c06cf585b8440daee1ee9c9 = $(`<div id="html_e2e624ba2c06cf585b8440daee1ee9c9" style="width: 100.0%; height: 100.0%;">     <b>País:</b> Suécia<br>     <b>Imposto:</b> 20.6<br>     <b>LPI:</b> 4.0<br>     <b>Facilidade Negócios:</b> 10.0<br>     <b>PIB:</b> 593.0<br>     <b>CPI:</b> 82     </div>`)[0];
+                popup_d166e0aa109ffa551207ebcd4740aa89.setContent(html_e2e624ba2c06cf585b8440daee1ee9c9);
+            
+        
+
+        marker_4ed29b10c9e02596090abe08a22ec0c5.bindPopup(popup_d166e0aa109ffa551207ebcd4740aa89)
+        ;
+
+        
+    
+    
+            marker_4ed29b10c9e02596090abe08a22ec0c5.bindTooltip(
+                `<div>
+                     Suécia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_987117f87d4a7f6231e2438f163fb3ad = L.marker(
+                [56.0, 10.0],
+                {
+}
+            ).addTo(map_d602a695b89d26b6187434e08e98cffa);
+        
+    
+        var popup_e456122c993d9fb3c91929af446b2613 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8852f5de17fcc1064b273719b78d5266 = $(`<div id="html_8852f5de17fcc1064b273719b78d5266" style="width: 100.0%; height: 100.0%;">     <b>País:</b> Dinamarca<br>     <b>Imposto:</b> 22.0<br>     <b>LPI:</b> 4.1<br>     <b>Facilidade Negócios:</b> 4.0<br>     <b>PIB:</b> 404.0<br>     <b>CPI:</b> 90     </div>`)[0];
+                popup_e456122c993d9fb3c91929af446b2613.setContent(html_8852f5de17fcc1064b273719b78d5266);
+            
+        
+
+        marker_987117f87d4a7f6231e2438f163fb3ad.bindPopup(popup_e456122c993d9fb3c91929af446b2613)
+        ;
+
+        
+    
+    
+            marker_987117f87d4a7f6231e2438f163fb3ad.bindTooltip(
+                `<div>
+                     Dinamarca
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_daa29cbae30b2076709a192942b0f40f = L.marker(
+                [53.0, -8.0],
+                {
+}
+            ).addTo(map_d602a695b89d26b6187434e08e98cffa);
+        
+    
+        var popup_289fb3fe89e999bbc9c100d346c68e7c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0219b7aa7809beefc9e3b632cb8bf43c = $(`<div id="html_0219b7aa7809beefc9e3b632cb8bf43c" style="width: 100.0%; height: 100.0%;">     <b>País:</b> Irlanda<br>     <b>Imposto:</b> 12.5<br>     <b>LPI:</b> 3.6<br>     <b>Facilidade Negócios:</b> 24.0<br>     <b>PIB:</b> 545.0<br>     <b>CPI:</b> 77     </div>`)[0];
+                popup_289fb3fe89e999bbc9c100d346c68e7c.setContent(html_0219b7aa7809beefc9e3b632cb8bf43c);
+            
+        
+
+        marker_daa29cbae30b2076709a192942b0f40f.bindPopup(popup_289fb3fe89e999bbc9c100d346c68e7c)
+        ;
+
+        
+    
+    
+            marker_daa29cbae30b2076709a192942b0f40f.bindTooltip(
+                `<div>
+                     Irlanda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e786e2eb605733f78d9643d8a3cbd644 = L.marker(
+                [60.0, 25.0],
+                {
+}
+            ).addTo(map_d602a695b89d26b6187434e08e98cffa);
+        
+    
+        var popup_e3ea946313f1df403d73e4da607b0420 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b59dcfd66a5249cef8a35d5cb4bfe0fc = $(`<div id="html_b59dcfd66a5249cef8a35d5cb4bfe0fc" style="width: 100.0%; height: 100.0%;">     <b>País:</b> Finlândia<br>     <b>Imposto:</b> 20.0<br>     <b>LPI:</b> 4.2<br>     <b>Facilidade Negócios:</b> 20.0<br>     <b>PIB:</b> 300.0<br>     <b>CPI:</b> 88     </div>`)[0];
+                popup_e3ea946313f1df403d73e4da607b0420.setContent(html_b59dcfd66a5249cef8a35d5cb4bfe0fc);
+            
+        
+
+        marker_e786e2eb605733f78d9643d8a3cbd644.bindPopup(popup_e3ea946313f1df403d73e4da607b0420)
+        ;
+
+        
+    
+    
+            marker_e786e2eb605733f78d9643d8a3cbd644.bindTooltip(
+                `<div>
+                     Finlândia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2ccd1431ff15dbfe266c2b7671a6f30e = L.marker(
+                [1.35, 103.82],
+                {
+}
+            ).addTo(map_d602a695b89d26b6187434e08e98cffa);
+        
+    
+        var popup_4c7a22023c16a4317eb2d9bc5c308dbe = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fbf527763ece61aedacda6e5c7432b1c = $(`<div id="html_fbf527763ece61aedacda6e5c7432b1c" style="width: 100.0%; height: 100.0%;">     <b>País:</b> Singapura<br>     <b>Imposto:</b> 17.0<br>     <b>LPI:</b> 4.6<br>     <b>Facilidade Negócios:</b> 2.0<br>     <b>PIB:</b> 501.0<br>     <b>CPI:</b> 84     </div>`)[0];
+                popup_4c7a22023c16a4317eb2d9bc5c308dbe.setContent(html_fbf527763ece61aedacda6e5c7432b1c);
+            
+        
+
+        marker_2ccd1431ff15dbfe266c2b7671a6f30e.bindPopup(popup_4c7a22023c16a4317eb2d9bc5c308dbe)
+        ;
+
+        
+    
+    
+            marker_2ccd1431ff15dbfe266c2b7671a6f30e.bindTooltip(
+                `<div>
+                     Singapura
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_039efdd60085d04f913d0b1df3e2a352 = L.marker(
+                [60.0, -95.0],
+                {
+}
+            ).addTo(map_d602a695b89d26b6187434e08e98cffa);
+        
+    
+        var popup_fb3882382ab3577195071b16d66446c4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5367d314b4ce077b2cbd0de604212678 = $(`<div id="html_5367d314b4ce077b2cbd0de604212678" style="width: 100.0%; height: 100.0%;">     <b>País:</b> Canadá<br>     <b>Imposto:</b> 15.0<br>     <b>LPI:</b> 4.3<br>     <b>Facilidade Negócios:</b> 23.0<br>     <b>PIB:</b> 2140.0<br>     <b>CPI:</b> 76     </div>`)[0];
+                popup_fb3882382ab3577195071b16d66446c4.setContent(html_5367d314b4ce077b2cbd0de604212678);
+            
+        
+
+        marker_039efdd60085d04f913d0b1df3e2a352.bindPopup(popup_fb3882382ab3577195071b16d66446c4)
+        ;
+
+        
+    
+    
+            marker_039efdd60085d04f913d0b1df3e2a352.bindTooltip(
+                `<div>
+                     Canadá
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
